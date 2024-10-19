@@ -21,13 +21,13 @@ gourmet, 1234
 ## Endpoints de la API
 
 
-## 1. Listar todos los artículos
+### 1. Listar todos los artículos
 
 - **URL:** `/api/articulos/`
 - **Método:** `GET`
 - **Descripción:** Obtiene una lista de todos los artículos registrados en el sistema.
 
-### Respuesta exitosa (200 OK):
+#### Respuesta exitosa (200 OK):
 ```json
 [
   {
@@ -49,13 +49,13 @@ gourmet, 1234
 ]
 ```
 
-## 2. Crear un nuevo artículo
+### 2. Crear un nuevo artículo
 
 - **URL:** `/api/articulos/`
 - **Método:** `POST`
 - **Descripción:** Crea un nuevo artículo en el sistema.
 
-### Cuerpo de la solicitud:
+#### Cuerpo de la solicitud:
 ```json
 {
   "nombre": "Nuevo Artículo",
@@ -66,7 +66,7 @@ gourmet, 1234
 }
 ```
 
-### Respuesta exitosa (200 OK):
+#### Respuesta exitosa (200 OK):
 ```json
 {
   "id": 3,
@@ -78,16 +78,16 @@ gourmet, 1234
 }
 ```
 
-## 3. Obtener detalles de un artículo
+### 3. Obtener detalles de un artículo
 
 - **URL:** `/api/articulos/<id>/`
 - **Método:** `GET`
 - **Descripción:** Obtiene los detalles de un artículo específico.
 
-### Parámetros de URL:
+#### Parámetros de URL:
 - **id**: ID del artículo que se desea consultar.
 
-### Respuesta exitosa (200 OK):
+#### Respuesta exitosa (200 OK):
 ```json
 {
   "id": 1,
@@ -99,16 +99,16 @@ gourmet, 1234
 }
 ```
 
-## 4. Actualizar un artículo existente
+### 4. Actualizar un artículo existente
 
 - **URL:** `/api/articulos/<id>/`
 - **Método:** `PUT` o `PATCH`
 - **Descripción:** Actualiza los detalles de un artículo existente.
 
-### Parámetros de URL:
+#### Parámetros de URL:
 - **id**: ID del artículo que se desea actualizar.
 
-### Cuerpo de la solicitud:
+#### Cuerpo de la solicitud:
 ```json
 {
   "nombre": "Artículo Actualizado",
@@ -118,7 +118,7 @@ gourmet, 1234
   "precio": 20.00
 }
 ```
-### Respuesta exitosa (200 OK):
+#### Respuesta exitosa (200 OK):
 ```json
 {
   "id": 1,
@@ -130,14 +130,14 @@ gourmet, 1234
 }
 ```
 
-## 5. Eliminar un artículo
+### 5. Eliminar un artículo
 
 - **URL:** `/api/articulos/<id>/`
 - **Método:** `DELETE`
 - **Descripción:** Elimina un artículo del sistema.
 
-### Parámetros de URL:
+#### Parámetros de URL:
 - **id**: ID del artículo que se desea eliminar.
 
-### Respuesta exitosa (204 No Content):
+#### Respuesta exitosa (204 No Content):
 No hay contenido en la respuesta, lo que indica que el artículo ha sido eliminado exitosamente.
