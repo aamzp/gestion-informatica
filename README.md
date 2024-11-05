@@ -18,6 +18,14 @@ Sigue el manual para la instalación de Django. Recuerda generar una carpeta par
 
 gourmet, 1234
 
+## Ingresar al servicio del frontend (React)
+
+- Abrir terminal en carpeta raiz del servicio
+- Inciar con comando:
+```
+npm start
+```
+
 ## Endpoints de la API
 
 
